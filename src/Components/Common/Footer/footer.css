@@ -1,0 +1,62 @@
+footer {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.footer-up {
+  background-color: #323333;
+  padding: 5% 1% 2% 1%;
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-up .nav-link:hover {
+  color: white;
+}
+
+.footer-up li {
+  list-style-type: none;
+}
+
+.footer-up li::before {
+  content: none;
+}
+
+.footer-up ul {
+  padding: 0;
+}
+
+.footer-up h5 {
+  color: white;
+}
+
+.footer-up h5::before {
+  color: white;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  content: '';
+  height: 3px;
+  width: 34px;
+}
+
+.footer-down {
+  background-color: black;
+  padding: 20px 0 5px;
+  text-align: center;
+  color: white;
+}
+
+.companyName{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%; 
+}
+.companyName>h1{
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  
+}
+.map-container {
+  height: 400px;
+  width: 100%;
+}

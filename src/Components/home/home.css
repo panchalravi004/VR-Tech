@@ -1,0 +1,16 @@
+.serviceHeading{
+  text-align: center;
+}
+.serviceContent{
+  padding: 2%;
+  text-align: center;
+}
+.serviceBtn{
+  background-color: #9D4088;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 20px;
+  display: block;
+  margin: 0 auto;
+}

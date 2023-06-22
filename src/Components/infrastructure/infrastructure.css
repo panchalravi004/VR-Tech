@@ -1,0 +1,23 @@
+figure img {
+  max-width: 100%;
+}
+
+.main-content p {
+  margin: 2rem 0;
+}
+
+.infrastructure-machine {
+  margin: 10px 0 35px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.infrastructure-machine .machine-description {
+  display: inline-flex;
+  align-items: center;
+}
+
+h3 {
+  margin: 40px 0 0 0;
+}

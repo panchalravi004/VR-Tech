@@ -1,0 +1,13 @@
+.service-header {
+  background-image: url('../../assets/covers/service-header-img.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 40vh;
+  background-color: #323333;
+  background-size: cover;
+  color: white;
+  font-weight: bolder !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
