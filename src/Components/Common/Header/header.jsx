@@ -28,25 +28,14 @@ function Header(props) {
       <div className="lower-header">
         <div className="container">
           <div className="lower-header-content">
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-              <NavLink className="nav-link navbar-brand" to="/">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+              <NavLink className="navbar-brand" to="/">
                 VR TECHNOCRAFT
               </NavLink>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
+              <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavbar}>
+                <span class="navbar-toggler-icon"></span>
               </button>
-              <div
-                className="collapse navbar-collapse justify-content-end"
-                id="navbarSupportedContent"
-              >
+              <div className="navbar-collapse collapse justify-content-end" id="navbarColor01">
                 <ul className="navbar-nav mr-auto nav-ul-li">
                   <li className="nav-item">
                     <NavLink className="nav-link" to="/">
@@ -54,18 +43,8 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/about">
-                      ABOUT
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
                     <NavLink className="nav-link" to="/infrastructure">
                       INFRASTRUCTURE
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/service">
-                      SERVICE
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -79,8 +58,18 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li className="nav-item">
+                    <NavLink className="nav-link" to="/service">
+                      SERVICE
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
                     <NavLink className="nav-link" to="/contact">
                       CONTACT
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink className="nav-link" to="/about">
+                      ABOUT
                     </NavLink>
                   </li>
                   {/* <li className="nav-item">
@@ -101,6 +90,18 @@ function Header(props) {
       </div>
     </React.Fragment>
   );
+}
+
+function handleNavbar() {
+  
+  var a = document.getElementById('navbarColor01');
+  if (a.classList.contains('show')) {
+    
+    a.classList.remove('show');
+  }else{
+    a.classList.add('show');
+  }
+
 }
 
 export default Header;
