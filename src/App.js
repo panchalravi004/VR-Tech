@@ -11,6 +11,7 @@ import Header from "./Components/Common/Header/header";
 import CuttingProcess from "./Components/cuttingProcess/cuttingProcess";
 import Home from "./Components/home/home";
 import Infrastructure from "./Components/infrastructure/infrastructure";
+import Contact from "./Components/contactUs/contact/contact";
 import Service from "./Components/service/service";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />}></Route>
         <Route exact path="/service" element={<Service />}></Route>
+        <Route exact path="/contact" element={<Contact />}></Route>
         <Route
           exact
           path="/infrastructure"

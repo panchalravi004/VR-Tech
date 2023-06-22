@@ -1,0 +1,68 @@
+.contact-info__wrapper {
+    /* background: linear-gradient(90deg, rgba(2,7,28,0.7792366946778712) 12%, rgba(2,6,24,0.8940826330532213) 38%, rgba(3,3,11,0.8548669467787114) 60%, rgba(3,1,0,0.7120098039215687) 87%); */
+    background-color: rgba(5, 5, 187, 0.601);
+    overflow: hidden;
+    border-radius: .625rem .625rem 0 0;
+    color:rgba(255, 255, 255, 0.912);
+    
+}
+
+.contactHead
+{
+    background-color: red;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+   
+}
+
+
+.contactinner
+{
+    position: absolute;
+    width: 340px;
+    height: 400px;
+    left:70%;
+    top:20%;
+    color:white;
+    transition: all;
+    transition: 1s;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    -moz-animation-iteration-count:inherit;
+
+}
+
+@keyframes anim {
+    0% {top:300px},
+    100%{top:20px}
+  }
+
+
+@media (min-width: 1024px) {
+    .contact-info__wrapper {
+        border-radius: 0 .625rem .625rem 0;
+        padding: 3rem !important
+    }
+}
+.contact-info__list span.position-absolute {
+    left: 0
+}
+.z-index-101 {
+    z-index: 101;
+}
+.list-style--none {
+    list-style: none;
+
+}
+
+.t1:hover{
+    color:rgb(4, 4, 11);
+}
+
+
+.contact__wrapper {
+    background-color: #fff;
+    border-radius: 0 0 .625rem .625rem
+}
