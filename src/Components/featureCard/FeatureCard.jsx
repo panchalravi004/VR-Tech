@@ -1,58 +1,51 @@
+import {
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./featureCard.css";
+
 function FeatureCard() {
-  const [showDetail, setShowDetail] = useState(false);
-  const showContent = () => {
-    setTimeout(() => {
-      setShowDetail(true);
-    }, 400);
+
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsFlipped(true);
   };
-  const removeContent = () => {
-    // setTimeout(() => {
-    setShowDetail(false);
-    // }, 400);
+
+  const handleMouseLeave = () => {
+    setIsFlipped(false);
   };
+  
   return (
     <React.Fragment>
-      <div
-        id="mainCard"
-        onMouseEnter={showContent}
-        onMouseLeave={removeContent}
+      <div 
+      className='col-4 m-4 main-card'
       >
-        {!showDetail ? (
-          <>
-            <div class="ag-courses-item_link">
-              <div class="ag-courses-item_bg"></div>
-              <div className="cardIcon">qq</div>
-              <div class="cardHeading">qwqwq qwqwqw</div>
-              <div class="cardContent">
-                lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor
-                sitlorem
+        {/* {`main-card-inner ${isFlipped ? 'flipped' : ''}`} */}
+        <div class='main-card-inner'>
+          
+            <div className="card-front">
+              <div className="card-icon">
+                <FontAwesomeIcon icon={faPhone} />
               </div>
+              <h3 className="card-title">
+                Eceptional Service
+              </h3>
+              <h6 className="card-description">
+                  &nbsp;&nbsp;&nbsp;We team with our customers toward value engineering and continuous improvement
+              </h6>
             </div>
-          </>
-        ) : (
-          <>
-            <div className="cardContentBack">
-              lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor
-              sitloremlorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum
-              dolor sitloremlorem ipsum dolor sitlorem ipsum dolor sitlorem
-              ipsum dolor sitloremlorem ipsum dolor sitlorem ipsum dolor
+
+            <div className="card-back">
+              <h6 className="card-description">
+                this is back We team with our customers toward value engineering and continuous improvement
+              </h6>
             </div>
-          </>
-        )}
+        </div>
       </div>
     </React.Fragment>
   );
 }
 
 export default FeatureCard;
-
-{
-  /* <div className="cardIcon">qq</div>
-            <div className="cardHeading">qwqwq qwqwqw</div>
-            <div className="cardContent">
-              lorem ipsum dolor sitlorem ipsum dolor sitlorem ipsum dolor
-              sitlorem
-            </div> */
-}

@@ -3,7 +3,8 @@
 }
 .serviceContent{
   padding: 2%;
-  text-align: center;
+  text-align: justify;
+  text-justify: inter-word;
 }
 .serviceBtn{
   background-color: #9D4088;
@@ -13,4 +14,82 @@
   padding: 5px 20px;
   display: block;
   margin: 0 auto;
+}
+
+.content-title{
+  display: inline-block;
+  background: linear-gradient(45deg,#EE5B40,#ee406b);
+  color: white;
+  padding: 2px 20px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.content-description{
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+.carsousel-image{
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.986);
+}
+
+.carsousel-title{
+  display: inline-block;
+  background-color: #ec7560d8;
+  padding: 2px 20px;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+.carsousel-title:hover{
+  background-color: #e76851f1;
+  cursor: pointer;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover{
+  background-color: #ec7560d8;
+  scale: 1.2;
+
+}
+
+.brands {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+.brands__item {
+  background: #eee;
+  opacity: 0.6;
+  transition: 0.2s;
+}
+
+.brands__item:hover{
+  opacity: 1;
+}
+
+
+.brands__item img {
+  display: block;
+  /* Make sure max-width is added */
+  max-width: 100%;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .carsousel-image{
+    height: 350px;
+  }
 }
