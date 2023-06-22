@@ -1,6 +1,8 @@
 footer {
   margin-top: 50px;
-  width: 100%;
+  box-sizing: border-box;
+  background-color: red;
+  width: 99%;
 }
 
 .footer-up {
@@ -9,6 +11,11 @@ footer {
   color: rgba(255,255,255,0.7);
 }
 
+.t:hover
+{
+  font-weight:400;
+  color:white;
+}
 .footer-up .nav-link:hover {
   color: white;
 }

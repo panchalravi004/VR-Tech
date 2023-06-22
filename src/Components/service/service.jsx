@@ -11,10 +11,10 @@ function Service(props) {
           </h1>
         </div>
         <div className="container">
-          <div className="service-section">
-            <h3>ABRASIVE WATERJET CUTTING</h3>
-            <div className="row align-items-center">
-              <div className="col-7">
+          <div className="service-section  mt-5 pt-4">
+            <h3 style={{textAlign:"center"}}>ABRASIVE WATERJET CUTTING</h3>
+            <div className="row align-items-center p-3">
+              <div className="col-lg-6" style={{textAlign:"justify",marginRight:"10px"}}>
                 <p>
                   Abrasive cutting methods are used for hard materials such as
                   metal, glass, minerals, concrete, glass composites, ceramics,
@@ -44,7 +44,7 @@ function Service(props) {
                   can be changed in seconds without the need for any tools.
                 </p>
               </div>
-              <div className="col-5">
+              <div className="col-lg-5">
                 <figure>
                   <img
                     src={require("../../assets/abrasive-waterjet-cutting.jpg")}
@@ -54,10 +54,10 @@ function Service(props) {
               </div>
             </div>
           </div>
-          <div className="service-section">
-            <h3>PURE WATERJET CUTTING</h3>
-            <div className="row align-items-center">
-              <div className="col-7">
+          <div className="service-section mt-2 pt-4 ">
+            <h3 style={{textAlign:"center"}}>PURE WATERJET CUTTING</h3><br/>
+            <div className="row align-items-center p-3 mb-5" >
+              <div className="col-lg-6 " style={{textAlign:"justify",marginRight:"10px"}}>
                 <p>
                   This method is primarily used for soft materials such as
                   plastics, textiles, paper, sealing materials, metal foils,
@@ -77,7 +77,7 @@ function Service(props) {
                   up to three times the speed of sound.
                 </p>
               </div>
-              <div className="col-5">
+              <div className="col-lg-5">
                 <figure>
                   <img
                     src={require("../../assets/pure-waterjet-cutting.jpg")}
