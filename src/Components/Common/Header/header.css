@@ -27,19 +27,50 @@ ul.nav-ul-li li {
 }
 
 .lower-header-content .nav-link {
+    display: inline-table;
     color: white;
 }
+
+.lower-header-content .nav-item{
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0px 5px;
+}
+
+.lower-header-content .nav-link:hover{
+    color: #EE5B40;
+    border-bottom: 2px solid #EE5B40;
+}
+
+
 .lower-header-content .nav-link.active {
     color: white;
     border-bottom: 2px solid #EE5B40;
 }
-.navbar-brand{
-    font-size: 2rem;
-    border-bottom: none !important;
-    font-weight: 600;
+
+.lower-header-content .nav-link.active:hover{
+    color: #EE5B40;
 }
-a.nav-link.active::before {
+.navbar-brand{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    /* border-bottom: none !important; */
+}
+.navbar-brand.active{
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    color:transparent;
+}
+
+
+/* a.nav-link.active::before {
     position: absolute;
     color: white;
     height: 4px;
-}
+} */
