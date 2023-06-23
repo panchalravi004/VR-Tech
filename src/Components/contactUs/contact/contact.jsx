@@ -34,12 +34,12 @@ function Contact(props) {
       
 
       <div className="container">
-          <div className="contact__wrapper shadow-lg mt-n9" style={{margin:"100px 0px 100px 0px"}}>
+          <div className="contact__wrapper mt-n9" style={{margin:"100px 0px 100px 0px"}}>
               <div className="container-fluied row no-gutters mt-5">
                   <div className="col-lg-5 contact-info__wrapper gradient-brand-color p-0 order-lg-2">
                       <div className="row p-3">
                         <div className="companyName col-12 pt-3">
-                          <h1 style={{fontFamily:"serif",color:"white"}}>VR TECHNOCRAFT</h1>
+                          <h2 style={{fontFamily:"sans-serif",color:"white"}}>VR TECHNOCRAFT</h2>
                         </div>
                         <div className="col-lg-12 col-sm-12 ">
                           <div className="address mt-5">

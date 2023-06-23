@@ -22,33 +22,33 @@ function Footer(props) {
     <footer>
       <div className="footer-up m-0">
         <div className="container-fluied">
-          <div className="row">
-            <div className="companyName col-12">
-              <h1 style={{fontFamily:"serif"}}>VR TECHNOCRAFT</h1>
-            </div>
-            <div className="col-lg-5 col-sm-12 ">
+          <div className="row m-0">
+            <div className="col-lg-5 col-sm-12 p-5">
+              <div className="companyName col-12">
+                <h2 className="m-2">VR TECHNOCRAFT</h2>
+              </div>
               <div className="address mt-5">
-                <div className="row m-0 mb-2 t">
+                <div className="row m-0 mb-2">
                   <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                    <FontAwesomeIcon icon={faLocationDot} />
+                    <FontAwesomeIcon className="add-icon" icon={faLocationDot} />
                   </div>
                   <div className="col-11 p-0">
-                    <p>
+                    <p className="address-text">
                       L&T Heavy Engineering (In house Facility) LEMF-5, Nuclear
                       West Shop, Hazira Surat.
                     </p>
                   </div>
                 </div>
 
-                  <div className="row m-0 mb-2 t">
+                  <div className="row m-0 mb-2">
                     <div className="col-1 pl-2" style={{fontSize:'20px'}}>
                       <FontAwesomeIcon
-                        className="locationfa"
+                        className="add-icon"
                         icon={faLocationDot}
                       />
                   </div>
                   <div className="col-11 p-0 ">
-                    <p>
+                    <p className="address-text">
                       D-9/13, Hojiwala Industrial Area, Road No.2,
                       Sachin-Palsana Road, Surat, Gujarat-394230.
                     </p>
@@ -58,7 +58,9 @@ function Footer(props) {
               <div className="contactNo">
                 <div className="row m-0 mb-2 t">
                   <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                    <FontAwesomeIcon icon={faPhone} />
+                    <FontAwesomeIcon 
+                    className="add-icon"
+                    icon={faPhone} />
                   </div>
                   <div className="col-11 p-0">
                     <a className="nav-link" href="tel:+919898519815">
@@ -70,7 +72,9 @@ function Footer(props) {
               <div className="email">
                 <div className="row m-0 mb-5 t">
                   <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FontAwesomeIcon 
+                    className="add-icon"
+                    icon={faEnvelope} />
                   </div>
                   <div className="col-11 p-0">
                     <a
@@ -83,7 +87,7 @@ function Footer(props) {
                 </div>
               </div>
             </div>
-            <div className="col-lg-7 col-lg-7 col-sm-12">
+            <div className="col-lg-7 col-md-7 col-sm-12 d-flex justify-content-center align-items-center">
               <div className="map-container">
               <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}

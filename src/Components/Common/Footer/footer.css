@@ -2,19 +2,17 @@ footer {
   margin-top: 50px;
   box-sizing: border-box;
   background-color: red;
-  width: 99%;
 }
 
 .footer-up {
   background-color: #323333;
-  padding: 5% 1% 2% 1%;
   color: rgba(255,255,255,0.7);
 }
 
-.t:hover
+.address-text:hover
 {
   font-weight:400;
-  color:white;
+  color:#EE5B40;
 }
 .footer-up .nav-link:hover {
   color: white;
@@ -56,14 +54,20 @@ footer {
 .companyName{
   display: flex;
   justify-content: center;
-  margin-bottom: 2%; 
+  align-items: center;
+  background-color: rgb(17, 17, 17);
+  border-radius: 10px;
 }
-.companyName>h1{
-  border-bottom: 1px solid white;
-  padding-bottom: 5px;
-  
+
+.add-icon{
+  color: #EE5B40;
 }
+
+.companyName h2{
+  font-family: sans-serif;
+}
+
 .map-container {
-  height: 400px;
+  height: 450px;
   width: 100%;
 }
