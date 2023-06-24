@@ -58,8 +58,8 @@ function Home(props) {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3 className="carsousel-title">First slide label</h3>
-            <p className="carsousel-description">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className="carsousel-title">Precision Cutting Solutions</h3>
+            <p className="carsousel-description">Flawless and precise CNC Water Jet Services for a wide range of materials, delivering unmatched accuracy and quality.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -70,8 +70,8 @@ function Home(props) {
           />
 
           <Carousel.Caption>
-            <h3 className="carsousel-title">Second slide label</h3>
-            <p className="carsousel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3 className="carsousel-title">Versatile Material Processing</h3>
+            <p className="carsousel-description">Cutting through steel, aluminum, granite, glass, and more with our advanced CNC Water Jet Machines, ensuring clean and intricate cuts.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -82,9 +82,9 @@ function Home(props) {
           />
 
           <Carousel.Caption>
-            <h3 className="carsousel-title">Third slide label</h3>
+            <h3 className="carsousel-title">Customized Solutions</h3>
             <p className="carsousel-description">
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Tailored CNC Water Jet Solutions that maximize efficiency, reduce waste, and save costs, bringing your ideas to life.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -96,9 +96,9 @@ function Home(props) {
           />
 
           <Carousel.Caption>
-            <h3 className="carsousel-title">Four slide label</h3>
+            <h3 className="carsousel-title">Exceptional Quality and Efficiency</h3>
             <p className="carsousel-description">
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              State-of-the-art CNC Water Jet Systems delivering exceptional precision, faster turnaround times, and consistent results.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -169,14 +169,18 @@ function Home(props) {
 
       {/* Services Section */}
       <div className="services py-3">
-        <div className="serviceHeading mb-5">
-          <h1>Our Services</h1>
+        <div className="text-center">
+            <h4>AN EXTENSION OF YOUR TEAM</h4>
+            <h2 className="fw-bolder">Our Services</h2>
         </div>
-        <div className="container serviceContent">
+        {/* <div className="serviceHeading mb-5">
+          <h1>Our Services</h1>
+        </div> */}
+        <div className="container serviceContent my-4">
           <div class="row align-items-center">
             <div className="col-xl-5">
               <ScrollAnimation animateIn="fadeIn">
-                <img className="serviceContent-image"  src={require("../../assets/work/work-3.jpg")} alt="" />
+                <img className="serviceContent-image"  src={require("../../assets/work/work-4.jpg")} alt="" />
               </ScrollAnimation>
             </div>
             <div className="col-xl-7">
@@ -185,9 +189,7 @@ function Home(props) {
                     <li>We have the 11 years of practical experience in CNC Water Jet Cutting business.</li>
                     <li>We are expertise in any kind of critical work and maintenance work of machine.</li>
                     <li>We believe in Excellent cutting quality work.</li>
-                    <li>We have an experience work with Défense project, Heavy Engineering Project, Nuclear</li>
-                    Power Plant Project.
-                    
+                    <li>We have an experience work with Défense project, Heavy Engineering Project, Nuclear Power Plant Project.</li>
                     <li>We realize that this situation is difficult in Water jet Cutting, but rest-assured we will find a solution for you any time.</li>
                     
                     <li>Customer benefit is appreciating for us.</li>
@@ -202,13 +204,53 @@ function Home(props) {
 
       <hr />
 
+      {/* Industries */}
+      <div className="container py-4">
+        <div className="text-center">
+          <h4>EXPERTISE TO THE INDUSTRY VERTICALS</h4>
+          <h2 className="fw-bolder">Industries We Serve</h2>
+        </div>
+        <div className="py-5">
+          <ScrollAnimation animateIn="fadeIn">
+            <div class="row justify-content-around align-items-center">
+                <div className="industry-card col-lg-4 my-3">
+                  <img src={require("../../assets/industry/industry-2.jpg")} className="industry-card-image w-100" alt="" srcset="" />
+                  <h2 className="industry-card-title">Automotive</h2>
+                </div>
+                <div className="industry-card col-lg-4 my-3">
+                  <img src={require("../../assets/industry/industry-1.jpg")} className="industry-card-image w-100" alt="" srcset="" />
+                  <h2 className="industry-card-title">Defense</h2>
+                </div>
+                <div className="industry-card col-lg-4 my-3">
+                  <img src={require("../../assets/industry/industry-3.jpg")} className="industry-card-image w-100" alt="" srcset="" />
+                  <h2 className="industry-card-title">Renewable Energy</h2>
+                </div>
+                <div className="industry-card col-lg-4 my-3">
+                  <img src={require("../../assets/industry/industry-5.jpg")} className="industry-card-image w-100" alt="" srcset="" />
+                  <h2 className="industry-card-title">Oil & Gas</h2>
+                </div>
+                <div className="industry-card col-lg-4 my-3">
+                  <img src={require("../../assets/industry/industry-7.jpg")} className="industry-card-image w-100" alt="" srcset="" />
+                  <h2 className="industry-card-title">Aerospace</h2>
+                </div>
+                <div className="industry-card col-lg-4 my-3">
+                  <img src={require("../../assets/industry/industry-6.jpg")} className="industry-card-image w-100" alt="" srcset="" />
+                  <h2 className="industry-card-title">& Many More</h2>
+                </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </div>
+
+      <hr />
+
       {/* Showing Feature Card */}
       <div className="container py-4">
-        <div className="feature-section-head text-center">
+        <div className="text-center">
           <h4>WHAT YOU CAN EXPECT</h4>
           <h2 className="fw-bolder">Our Commitment To You</h2>
         </div>
-        <div className="feature-section-body py-5">
+        <div className="py-5">
           <div class="row justify-content-around">
           {dataList.map((item, index) => (
               <FeatureCard data={item} />

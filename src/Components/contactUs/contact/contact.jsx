@@ -66,9 +66,8 @@ function Contact(props) {
                               </div>
                               <div className="col-11 pl-3 ">
                                 <p>
-                                Unit-2
-                                D-9/13, Hojiwala Industrial Area, Road No.2, Sachin-Palsana Road,
-                                Surat, Gujarat-394230.  
+                                C-1/17, Hojiwala Industrial Estate, Road No.8, Gate No. 1, Sachin,
+                                Surat, Gujarat, India-394230.  
                                 </p>
                               </div>
                             </div>
