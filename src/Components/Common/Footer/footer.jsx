@@ -32,7 +32,7 @@ function Footer(props) {
                   <div className="col-1 pl-2" style={{fontSize:'20px'}}>
                     <FontAwesomeIcon className="add-icon" icon={faLocationDot} />
                   </div>
-                  <div className="col-11 p-0">
+                  <div className="col-11 px-2">
                     <p className="address-text">
                       L&T Heavy Engineering (In house Facility) LEMF-5, Nuclear
                       West Shop, Hazira Surat.
@@ -47,7 +47,7 @@ function Footer(props) {
                         icon={faLocationDot}
                       />
                   </div>
-                  <div className="col-11 p-0 ">
+                  <div className="col-11 px-2">
                     <p className="address-text">
                       C-1/17, Hojiwala Industrial Estate, Road No.8, Gate No. 1, Sachin,
                       Surat, Gujarat, India-394230.  
@@ -62,7 +62,7 @@ function Footer(props) {
                     className="add-icon"
                     icon={faPhone} />
                   </div>
-                  <div className="col-11 p-0">
+                  <div className="col-11 px-2">
                     <a className="nav-link" href="tel:+919898519815">
                       +91&nbsp;98985&nbsp;19815
                     </a>
@@ -76,7 +76,7 @@ function Footer(props) {
                     className="add-icon"
                     icon={faEnvelope} />
                   </div>
-                  <div className="col-11 p-0">
+                  <div className="col-11 px-2">
                     <a
                       className="nav-link"
                       href="mailto:vr.technocraft@yahoo.com"
