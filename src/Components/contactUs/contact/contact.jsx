@@ -14,6 +14,7 @@ function Contact(props) {
  
   return (
     <>
+      
       <div className='contactHead'>
         <div className='row contactinner'>
           <div className='col-12'style={{fontSize:"15px",fontFamily:"unset"}}>
@@ -25,18 +26,24 @@ function Contact(props) {
           src={require("../../../assets/covers/contact-header.jpg")}
           alt="infrastructure-header"
           width="100%"
-          height="400px"
-         
-        ></img>
+          height="400px"></img>
 
+      </div>
+
+      <div className="container d-flex justify-content-center">
+        <div className="contact-content-title my-5">
+          <h2>
+            Contact Us
+          </h2>
+        </div>
       </div>
 
       
 
       <div className="container">
-          <div className="contact__wrapper mt-n9" style={{margin:"100px 0px 100px 0px"}}>
-              <div className="container-fluied row no-gutters mt-5">
-                  <div className="col-lg-5 contact-info__wrapper gradient-brand-color p-0 order-lg-2">
+          <div className="contact__wrapper ">
+              <div className="container-fluied row no-gutters">
+                  <div className="col-lg-5 contact-info__wrapper gradient-brand-color order-lg-2">
                       <div className="row p-3">
                         <div className="companyName col-12 pt-3">
                           <h2 style={{fontFamily:"sans-serif",color:"white"}}>VR TECHNOCRAFT</h2>
