@@ -30,16 +30,6 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/benifitsofoperation">
-                      BENEFITS OF OPERATION
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/cuttingprocess">
-                      CUTTING PROCESS
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
                     <NavLink className="nav-link" to="/service">
                       SERVICE
                     </NavLink>
