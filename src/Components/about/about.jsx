@@ -1,9 +1,12 @@
-import { faLightbulb } from "@fortawesome/free-regular-svg-icons";
+
 import { faFlag } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEye } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import "./about.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+
+
 
 function About(props) {
   const clientList = [
@@ -26,14 +29,14 @@ function About(props) {
           src={require("../../assets/covers/about.jpg")}
           alt="infrastructure-header"
         ></img>
+         <div className="page-image-header-title">
+          <h2 >About of VR Technocraft</h2>
+        </div>
       </figure>
+
       <div className="container">
         <div className="container d-flex justify-content-center">
-          <div className="about-content-title my-5">
-            <h2>
-              About of VR Technocraft
-            </h2>
-          </div>
+          
         </div>
         <p className="about-detail">
           VR TECHNOCRAFT is House of waterjet Profile Cutting services in the
@@ -64,8 +67,9 @@ function About(props) {
           <div className="row justify-content-around p-2">
             <div className="col-lg-5 col-sm-12 m-2 about-section-card">
               <div className="row">
-                <div className="col-2 d-flex justify-content-center align-items-center icon">
-                  <FontAwesomeIcon icon={faLightbulb} size="lg" />
+                <div className="col-2 d-flex justify-content-center align-items-center icon" >
+                  {/* <FontAwesomeIcon icon={faLightbulb} size="lg" /> */}
+                  <FontAwesomeIcon icon={faEye} style={{marginRight:"5px"}}/>
                 </div>
                 <div className="col-10">
                   <h4>Our Vision</h4>
@@ -81,6 +85,7 @@ function About(props) {
               <div className="row">
                 <div className="col-2 d-flex justify-content-center align-items-center icon">
                   <FontAwesomeIcon icon={faFlag} />
+
                 </div>
                 <div className="col-10">
                   <h4>Our Mission</h4>
@@ -163,145 +168,8 @@ function About(props) {
           </div>
         </div>
         <div className="technology about-sections">
-          <div className="d-flex justify-content-center">
-            <h2 className="technology-title">Technology</h2>
-          </div>
-          <br />
           
-          <div className="img-table">
-            <div className="technology-image my-5 row justify-content-center">
-              <figure className="col-lg-6">
-                <img src={require("../../assets/chart.jpg")} alt="chart" />
-              </figure>
-              <div className="col-lg-6 d-flex justify-content-center align-items-center">
-
-                <h2 className="text-center ">
-                  Water Jet <br /><br /> VS <br /><br />  Other Technologies
-                </h2>
-              </div>
-            </div>
-            
-            <div className="tech-table">
-              <table>
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Waterjet</th>
-                    <th>EDM</th>
-                    <th>Laser</th>
-                    <th>Plasma</th>
-                    <th>Gas Cutting</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Thickness</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                    <td>-</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                  </tr>
-                  <tr>
-                    <td>Diversity</td>
-                    <td>+ +</td>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>- -</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>Quality - Surface Finished</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Saving Finishing Operation</td>
-                    <td>+</td>
-                    <td>+ +</td>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Speed</td>
-                    <td>-</td>
-                    <td>- -</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                    <td>+</td>
-                  </tr>
-                  <tr>
-                    <td>Universality</td>
-                    <td>+ +</td>
-                    <td>- -</td>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>-</td>
-                  </tr>
-                  <tr>
-                    <td>Environmental Friendliness</td>
-                    <td>+ +</td>
-                    <td>- -</td>
-                    <td>- -</td>
-                    <td>- -</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Flexibility</td>
-                    <td>+ +</td>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Heat Affected Zone</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Metalurgical Damage</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                    <td>-</td>
-                    <td>- -</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Total Processing Time</td>
-                    <td>+ +</td>
-                    <td>+ +</td>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>- -</td>
-                  </tr>
-                  <tr>
-                    <td>Operation Cost</td>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>-</td>
-                    <td>+</td>
-                    <td>+ +</td>
-                  </tr>
-                  <tr>
-                    <td>Investment Cost</td>
-                    <td>100%</td>
-                    <td>60%</td>
-                    <td>200%</td>
-                    <td>80%</td>
-                    <td>40%</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
+          
           <div className="d-flex justify-content-center my-5">
             <h2 className="technology-title">Advantages of Waterjet Technology</h2>
           </div>

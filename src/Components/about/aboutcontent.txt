@@ -1,0 +1,139 @@
+<div className="d-flex justify-content-center">
+            <h2 className="technology-title">Technology</h2>
+          </div>
+          <br />
+          
+          <div className="img-table">
+            <div className="technology-image my-5 row justify-content-center">
+              <figure className="col-lg-6">
+                <img src={require("../../assets/chart.jpg")} alt="chart" />
+              </figure>
+              <div className="col-lg-6 d-flex justify-content-center align-items-center">
+
+                <h2 className="text-center ">
+                  Water Jet <br /><br /> VS <br /><br />  Other Technologies
+                </h2>
+              </div>
+            </div>
+            
+            <div className="tech-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Waterjet</th>
+                    <th>EDM</th>
+                    <th>Laser</th>
+                    <th>Plasma</th>
+                    <th>Gas Cutting</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Thickness</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                    <td>-</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                  </tr>
+                  <tr>
+                    <td>Diversity</td>
+                    <td>+ +</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>- -</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Quality - Surface Finished</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Saving Finishing Operation</td>
+                    <td>+</td>
+                    <td>+ +</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Speed</td>
+                    <td>-</td>
+                    <td>- -</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                    <td>+</td>
+                  </tr>
+                  <tr>
+                    <td>Universality</td>
+                    <td>+ +</td>
+                    <td>- -</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>Environmental Friendliness</td>
+                    <td>+ +</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Flexibility</td>
+                    <td>+ +</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Heat Affected Zone</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Metalurgical Damage</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                    <td>-</td>
+                    <td>- -</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Total Processing Time</td>
+                    <td>+ +</td>
+                    <td>+ +</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>- -</td>
+                  </tr>
+                  <tr>
+                    <td>Operation Cost</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>-</td>
+                    <td>+</td>
+                    <td>+ +</td>
+                  </tr>
+                  <tr>
+                    <td>Investment Cost</td>
+                    <td>100%</td>
+                    <td>60%</td>
+                    <td>200%</td>
+                    <td>80%</td>
+                    <td>40%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>

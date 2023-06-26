@@ -41,7 +41,7 @@ function Contact(props) {
       
 
       <div className="container">
-          <div className="contact__wrapper ">
+          <div className="contact__wrapper" >
               <div className="container-fluied row no-gutters">
                   <div className="col-lg-5 contact-info__wrapper gradient-brand-color order-lg-2">
                       <div className="row p-3">
@@ -50,10 +50,10 @@ function Contact(props) {
                         </div>
                         <div className="col-lg-12 col-sm-12 ">
                           <div className="address mt-5">
+                              <div className="col-12 p-0"><h4><b>Unit 1</b></h4></div>
                             <div className="row m-0 mb-2 t1">
-                              <div className="col-12 p-0"><h4>Unit 1</h4></div>
                               <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                                <FontAwesomeIcon icon={faLocationDot} />
+                                <FontAwesomeIcon icon={faLocationDot} style={{color:"#EE5B40"}}/>
                               </div>
                               <div className="col-11 pl-3">
                                 <p>
@@ -63,12 +63,13 @@ function Contact(props) {
                               </div>
                             </div>
 
+                              <div className="col-12 p-0"><h4><b>Unit 2</b></h4></div>
                               <div className="row m-0 mb-2 t1">
-                              <div className="col-12 p-0"><h4>Unit 2</h4></div>
                                 <div className="col-1 pl-2" style={{fontSize:'20px'}}>
                                   <FontAwesomeIcon
                                     className="locationfa"
                                     icon={faLocationDot}
+                                    style={{color:"#EE5B40"}}
                                   />
                               </div>
                               <div className="col-11 pl-3 ">
@@ -82,7 +83,7 @@ function Contact(props) {
                           <div className="contactNo">
                             <div className="row m-0 mb-2 t1">
                               <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                                <FontAwesomeIcon icon={faUser} />
+                                <FontAwesomeIcon icon={faUser} style={{color:"#EE5B40"}}/>
                               </div>
                               <div className="col-11 pl-3">
                                 <a className="nav-link" href="tel:+919898519815">
@@ -94,7 +95,7 @@ function Contact(props) {
                           <div className="contactNo">
                             <div className="row m-0 mb-2 t1">
                               <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                                <FontAwesomeIcon icon={faPhone} />
+                                <FontAwesomeIcon icon={faPhone} style={{color:"#EE5B40"}} />
                               </div>
                               <div className="col-11 pl-3">
                                 <a className="nav-link" href="tel:+919898519815">
@@ -106,7 +107,7 @@ function Contact(props) {
                           <div className="email">
                             <div className="row m-0 mb-5 t1">
                               <div className="col-1 pl-2" style={{fontSize:'20px'}}>
-                                <FontAwesomeIcon icon={faEnvelope} />
+                                <FontAwesomeIcon icon={faEnvelope} style={{color:"#EE5B40"}} />
                               </div>
                               <div className="col-11 pl-3">
                                 <a
@@ -129,28 +130,28 @@ function Contact(props) {
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label className="required-field" for="firstName">First Name</label>
-                                      <input type="text" className="form-control" id="firstName" name="firstName" placeholder="Wendy"/>
+                                      <input type="text" className="form-control" id="firstName" name="firstName" placeholder="Pavan"/>
                                   </div>
                               </div>
           
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label for="lastName">Last Name</label>
-                                      <input type="text" className="form-control" id="lastName" name="lastName" placeholder="Appleseed"/>
+                                      <input type="text" className="form-control" id="lastName" name="lastName" placeholder="Savani"/>
                                   </div>
                               </div>
           
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label className="required-field" for="email">Email</label>
-                                      <input type="text" className="form-control" id="email" name="email" placeholder="wendy.apple@seed.com"/>
+                                      <input type="text" className="form-control" id="email" name="email" placeholder="pavansavani@gmail.com"/>
                                   </div>
                               </div>
           
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label for="phone">Phone Number</label>
-                                      <input type="tel" className="form-control" id="phone" name="phone" placeholder="(021)-454-545"/>
+                                      <input type="tel" className="form-control" id="phone" name="phone" placeholder="+919334556754"/>
                                   </div>
                               </div>
           
