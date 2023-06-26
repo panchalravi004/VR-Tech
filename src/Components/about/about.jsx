@@ -26,9 +26,8 @@ function About(props) {
     <React.Fragment>
       <figure>
         <img
-          src={require("../../assets/covers/about.jpg")}
-          alt="infrastructure-header"
-        ></img>
+          src={require("../../assets/slideshow/slide7.jpg")}
+          alt="infrastructure-header"></img>
          <div className="page-image-header-title">
           <h2 >About of VR Technocraft</h2>
         </div>
@@ -99,52 +98,8 @@ function About(props) {
             </div>
           </div>
         </div>
-        <div className="why-us about-sections my-5">
-          <div className="d-flex justify-content-center">
 
-            <h2 className="why-us-title">WHY US ?</h2>
-          </div>
-          <div className="why-us-content">
-            <div className="row align-items-center">
-              <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
-                <figure>
-                  <img
-                    src={require("../../assets/why-us.jpg")}
-                    alt="why-us"
-                    className="why-us-image"
-                  />
-                </figure>
-              </div>
-              <div className="col-lg-6 col-sm-12">
-                <ul>
-                  <li>
-                    We have the 11 years of practical experience in CNC Water
-                    Jet Cutting business.
-                  </li>
-                  <li>
-                    We are expertise in any kind of critical work and
-                    maintenance work of machine.
-                  </li>
-                  <li>We believe in Excellent cutting quality work.</li>
-                  <li>
-                    We have an experience work with Défense project, Heavy
-                    Engineering Project, Nuclear Power Plant Project.
-                  </li>
-                  <li>
-                    We realize that this situation is difficult in Water jet
-                    Cutting, but rest-assured we will find a solution for you
-                    any time.
-                  </li>
-                  <li>Customer benefit is appreciating for us.</li>
-                  <li>
-                    We are always active for critical work in water jet
-                    cutting.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/* Client */}
         <div className="our-client about-sections">
           <div className="d-flex justify-content-center">
 
@@ -167,8 +122,8 @@ function About(props) {
             })}
           </div>
         </div>
+        {/* Technology */}
         <div className="technology about-sections">
-          
           
           <div className="d-flex justify-content-center my-5">
             <h2 className="technology-title">Advantages of Waterjet Technology</h2>

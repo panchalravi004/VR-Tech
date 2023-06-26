@@ -1,5 +1,4 @@
 import React from 'react';
-
 import "./contact.css";
 import {
   faEnvelope,
@@ -23,7 +22,7 @@ function Contact(props) {
             </div>
         </div>
        <img
-          src={require("../../../assets/covers/contact-header.jpg")}
+          src={require("../../../assets/slideshow/slide9.jpg")}
           alt="infrastructure-header"
           width="100%"
           height="400px"></img>

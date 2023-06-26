@@ -7,7 +7,7 @@ function Service(props) {
     <React.Fragment>
       <figure>
         <img
-          src={require("../../assets/covers/infrastructure-header.jpg")}
+          src={require("../../assets/slideshow/slide6.jpg")}
           alt="infrastructure-header"
         ></img>
         <div className="page-image-header-title">
@@ -173,7 +173,7 @@ function Service(props) {
                   className="col-lg-6 "
                   style={{ textAlign: "justify", marginRight: "10px" }}
                 >
-                  <p className="page-header-detail">
+                  <p >
                     This method is primarily used for soft materials such as
                     plastics, textiles, paper, sealing materials, metal foils,
                     plywood, food, etc. Normal tap water is pressurized and forced
