@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import "./featureCard.css";
 
-function FeatureCard() {
+function FeatureCard({ data }) {
 
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -27,19 +27,20 @@ function FeatureCard() {
           
             <div className="card-front">
               <div className="card-icon">
-                <FontAwesomeIcon icon={faPhone} />
+                {/* <FontAwesomeIcon icon= /> */}
+                {data.icon_class}
               </div>
               <h3 className="card-title">
-                Eceptional Service
+                {data.title}
               </h3>
               <h6 className="card-description">
-                  &nbsp;&nbsp;&nbsp;We team with our customers toward value engineering and continuous improvement
+                  &nbsp;&nbsp;&nbsp;{data.small_description}
               </h6>
             </div>
 
             <div className="card-back">
               <h6 className="card-description">
-                this is back We team with our customers toward value engineering and continuous improvement
+                  {data.full_description}
               </h6>
             </div>
         </div>

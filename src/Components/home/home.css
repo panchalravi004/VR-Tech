@@ -1,10 +1,18 @@
 .serviceHeading{
   text-align: center;
 }
-.serviceContent{
-  padding: 2%;
-  text-align: justify;
-  text-justify: inter-word;
+.serviceHeading h1 {
+  display: inline;
+  border-bottom: 2px solid #9D4088;
+}
+
+.serviceContent .row .col-xl-7 ul li{
+  margin: 25px 0px;
+}
+.serviceContent-image{
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(109, 109, 109, 0.397);
 }
 .serviceBtn{
   background-color: #9D4088;
@@ -14,6 +22,10 @@
   padding: 5px 20px;
   display: block;
   margin: 0 auto;
+  transition: 0.4s;
+}
+.serviceBtn:hover{
+  background-color: #EE5B40;
 }
 
 .content-title{
@@ -25,25 +37,31 @@
   transition: 0.4s;
 }
 
+.carsousel-description{
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.788);
+
+}
 .content-description{
-  font-weight: 500;
+  font-weight: 400;
   font-size: 1.6rem;
 }
 
 .carsousel-image{
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.986);
+  height: 100vh;
 }
 
 .carsousel-title{
   display: inline-block;
-  background-color: #ec7560d8;
+  background: linear-gradient(45deg,#ec7560fa, #ec60c9f3);
   padding: 2px 20px;
   border-radius: 25px;
   transition: 0.4s;
 }
 
 .carsousel-title:hover{
-  background-color: #e76851f1;
+  background: linear-gradient(90deg,#ec7560fa, #ec60c9f3);
   cursor: pointer;
 }
 
@@ -87,6 +105,22 @@
   max-width: 100%;
 }
 
+.industry-card{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.industry-card-image{
+  border-radius: 10px;
+  opacity: 0.9;
+}
+.industry-card-title{
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0px 0px 10px black;
+}
 
 @media only screen and (max-width: 700px) {
   .carsousel-image{

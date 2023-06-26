@@ -23,12 +23,14 @@ ul.nav-ul-li li {
 }
 
 .lower-header-content .navbar {
-    background-color: #1414148f !important;
+    background-color: #141414c7 !important;
+    padding: 20px 0px;
 }
 
 .lower-header-content .nav-link {
     display: inline-table;
     color: white;
+    border-bottom: 2px solid transparent;
 }
 
 .lower-header-content .nav-item{

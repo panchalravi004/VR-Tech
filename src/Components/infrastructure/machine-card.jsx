@@ -1,10 +1,10 @@
 import React from "react";
 import "./infrastructure.css";
 
-function MachineCard(props) {
+function MachineCard({data}) {
   return (
-    <div className="infrastructure-machine">
-      <div className="machine-description">
+    <div className="row infrastructure-machine">
+      <div className={data ? "col-lg-6 machine-description order-lg-2" : "col-lg-6 machine-description order-lg-1"}>
         <ul>
           <li>Table Size: - 10500mm x 4050mm x 400mm</li>
           <li>Maximum Plate Cutting Size: - 15000 x 4050 x 400mm</li>
@@ -14,7 +14,7 @@ function MachineCard(props) {
           <li>Gantry Type: -Hiwin Rack & Pinion</li>
         </ul>
       </div>
-      <div className="machine-image">
+      <div className={data ? "col-lg-6 machine-image order-lg-1" : "col-lg-6 machine-image order-lg-2" }>
         <figure>
           <img
             src={require("../../assets/GRID-PRO-60HP-WATERJET-PUMP-3.jpg")}
@@ -22,11 +22,6 @@ function MachineCard(props) {
           />
         </figure>
       </div>
-      {false && (
-        <div className="col-5">
-          <div className="description"></div>
-        </div>
-      )}
     </div>
   );
 }

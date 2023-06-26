@@ -1,21 +1,47 @@
 figure img {
   max-width: 100%;
+  height: 300px;
 }
 
-.main-content p {
-  margin: 2rem 0;
+.infrastructure-content-title{
+  /* display: inline-block; */
+  background: linear-gradient(45deg,#EE5B40,#ee406b);
+  color: white;
+  padding: 2px 20px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.infrastruture-machine-heading{
+  display: inline-block;
+  font-weight: 600;
+  background-color: #7d4fa3;
+  color: white;
+  padding: 7px 35px;
+  margin: 25px 0px;
+  border-radius: 25px;
+  /* border-bottom: 2.5px solid #8811b8;   */
+}
+
+.infrastructure-detail{
+  font-size: 1.3rem;
+  text-align: start;
+  margin: 25px 0px;
 }
 
 .infrastructure-machine {
-  margin: 10px 0 35px 0;
+  margin: 35px 0px;
+  padding: 10px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid rgb(221, 221, 221);
+  box-shadow: 0px 0px 10px rgba(128, 127, 127, 0.288);
+  border-radius: 15px;
 }
  
-.infrastructure-machine .machine-description {
-  display: inline-flex;
-  align-items: center;
+.infrastructure-machine .machine-description ul li {
+  font-size: 1.2rem;
 }
 
 h3 {
