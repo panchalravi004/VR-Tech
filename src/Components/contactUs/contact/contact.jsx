@@ -7,13 +7,45 @@ import {
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import emailjs from "@emailjs/browser";
+import { useRef } from 'react';
+import { Alert,Spinner } from 'react-bootstrap';
+import { useState } from 'react';
 
 
 function Contact(props) {
- 
+  const [showSuccessAlert, setshowSuccessAlert] = useState(false);
+  const [showSpinner, setshowSpinner] = useState(false);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setshowSpinner(true);
+  
+    emailjs.sendForm('service_iji952j', 'template_9illals', form.current, '6tcj98kAdXA88WEpm')
+      .then((result) => {
+          console.log(result.text);
+          setshowSpinner(false);
+
+          document.getElementById("contact-form").reset();
+          
+          setshowSuccessAlert(true);
+          
+          setTimeout(() => {
+            setshowSuccessAlert(false);
+          }, 5000);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <>
-      
+      {/* Spinner */}
+      <div   className={`spinner-custom ${showSpinner ? 'show-spinner' : 'hide-spinner'}`}>
+        <Spinner className='spinner-sp' animation="border" variant="primary" />
+      </div>
+
       <div className='contactHead'>
         <div className='row contactinner'>
           <div className='col-12'style={{fontSize:"15px",fontFamily:"unset"}}>
@@ -26,7 +58,6 @@ function Contact(props) {
           alt="infrastructure-header"
           width="100%"
           height="400px"></img>
-
       </div>
 
       <div className="container d-flex justify-content-center">
@@ -36,8 +67,6 @@ function Contact(props) {
           </h2>
         </div>
       </div>
-
-      
 
       <div className="container">
           <div className="contact__wrapper" >
@@ -123,8 +152,18 @@ function Contact(props) {
                     
                   </div>
           
-                  <div className="col-lg-7 contact-form__wrapper p-5 order-lg-1">
-                      <form action="#" className="contact-form form-validate pt-5" novalidate="novalidate">
+                  <div className="col-lg-7 contact-form__wrapper d-flex justify-content-center px-5 py-3 order-lg-1">
+                    <div className="alert-message">
+                      <Alert
+                        show={showSuccessAlert}
+                        variant="success"
+                        className="w-100 alert-m-alert "
+                        onClose={() => setshowSuccessAlert(false)} dismissible
+                      >
+                        Email send Successfully !
+                      </Alert>
+                    </div>
+                      <form ref={form} onSubmit={sendEmail} id='contact-form' className="contact-form form-validate pt-5" novalidate="novalidate">
                           <div className="row pt-5">
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
