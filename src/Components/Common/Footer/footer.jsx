@@ -89,12 +89,21 @@ function Footer(props) {
             </div>
             <div className="col-lg-7 col-md-7 col-sm-12 d-flex justify-content-center align-items-center">
               <div className="map-container">
-              <GoogleMapReact
+              {/* <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
                 defaultCenter={defaultProps.center}
                 defaultZoom={defaultProps.zoom}
               >
-                </GoogleMapReact>
+                </GoogleMapReact> */}
+                <iframe
+                  title="map-1"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6922538130425!2d72.89641777600661!3d21.084950185844843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0514cde165b85%3A0x249a24bc41e68e19!2sVR%20TECHNOCRAFT!5e0!3m2!1sen!2sin!4v1687856652388!5m2!1sen!2sin"
+                  
+                  style={{border: 0}}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>

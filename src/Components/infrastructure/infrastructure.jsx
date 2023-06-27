@@ -35,6 +35,24 @@ function Infrastructure(props) {
               specifications:
             </p>
           </li>
+          <li>
+            <p className="infrastructure-detail">
+              We have 16000 sq.ft covered shed for work & material storage at our
+              outside premises.
+            </p>
+          </li>
+          <li>
+            <p className="infrastructure-detail">
+              Material Handling Capacity :
+            </p>
+            <ul>
+              <li>
+                <p className="infrastructure-detail">
+                  25 MT Overhead Crane & 20 MT Outside Crane
+                </p>
+              </li>
+            </ul>
+          </li>
         </ul>
 
         <hr />
