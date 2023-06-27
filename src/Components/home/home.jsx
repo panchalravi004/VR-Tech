@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./home.css";
 import Carousel from "react-bootstrap/Carousel";
 import FeatureCard from "../featureCard/FeatureCard";
@@ -11,7 +11,6 @@ import {
   faLeaf,
   faMedal,
   faMoneyBill,
-  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
