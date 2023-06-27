@@ -6,17 +6,17 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./footer.css";
-import GoogleMapReact from "google-map-react";
+// import GoogleMapReact from "google-map-react";
 
 function Footer(props) {
  
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
+  // const defaultProps = {
+  //   center: {
+  //     lat: 10.99835602,
+  //     lng: 77.01502627
+  //   },
+  //   zoom: 11
+  // };
 
   return (
     <footer>
