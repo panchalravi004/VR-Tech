@@ -57,17 +57,17 @@ function Infrastructure(props) {
 
         <hr />
 
-        <h4 className="infrastruture-machine-heading">Outside Water Jet Cutting Facility</h4>
+        <h4 className="infrastruture-machine-heading">Outside Water Jet Cutting Facility (1 & 2)</h4>
         <ScrollAnimation animateIn="fadeIn">
           <MachineCard></MachineCard>
         </ScrollAnimation>
-        <h4 className="infrastruture-machine-heading">L&T HED IN HOUSE Water Jet Cutting Facility</h4>
+        <h4 className="infrastruture-machine-heading">L&T HED IN HOUSE Water Jet Cutting Facility (3 & 4)</h4>
         <ScrollAnimation animateIn="fadeIn">
           <MachineCard data={true}></MachineCard>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeIn">
+        {/* <ScrollAnimation animateIn="fadeIn">
           <MachineCard></MachineCard>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </div>
     </React.Fragment>
   );

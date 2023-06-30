@@ -5,18 +5,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useState,useEffect } from "react";
 import "./footer.css";
 // import GoogleMapReact from "google-map-react";
 
 function Footer(props) {
- 
-  // const defaultProps = {
-  //   center: {
-  //     lat: 10.99835602,
-  //     lng: 77.01502627
-  //   },
-  //   zoom: 11
-  // };
+  const [year, setCount] = useState(0);
+
+  
+  useEffect(() => {
+    var dt = new Date();
+    setCount((year) => dt.getFullYear());
+  },[]);
 
   return (
     <footer>
@@ -112,7 +112,7 @@ function Footer(props) {
 
       <div className="footer-down  m-0">
         <div className="container-fluied">
-          <p>Copyright © 2023 VR Technocraft. All rights reserved.</p>
+          <p>Copyright ©{year} VR Technocraft. All rights reserved.</p>
         </div>
       </div>
     </footer>
