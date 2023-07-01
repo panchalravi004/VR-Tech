@@ -1,3 +1,13 @@
+.navbar-brand{
+    display: flex;
+    align-items: center;
+}
+.vr-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
 .uppper-header {
     background-color: #00529e;
     color: #fff;

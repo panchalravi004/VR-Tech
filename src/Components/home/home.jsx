@@ -13,6 +13,7 @@ import {
   faMoneyBill,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 function Home(props) {
   const dataList = [
@@ -65,6 +66,11 @@ function Home(props) {
       icon_class: <FontAwesomeIcon icon={faHandsHelping} />,
     },
   ];
+
+  // Scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   return (
     <React.Fragment>
@@ -145,8 +151,11 @@ function Home(props) {
           </div>
           </ScrollAnimation>
           <p className="page-main-header-description my-2">
-            Welcome to India's biggest job shop for CNC waterjet profile cutting
+            Welcome to the world of CNC waterjet profile cutting
           </p>
+          <div className="text-center my-4">
+            <h5>AN EXTENSION OF YOUR TEAM</h5>
+          </div>
         </div>
       </div>
       <hr />
@@ -154,7 +163,6 @@ function Home(props) {
       {/* Services Section */}
       <div className="services py-3">
         <div className="text-center">
-          <h4>AN EXTENSION OF YOUR TEAM</h4>
           <h2 className="fw-bolder">Our Services</h2>
         </div>
         <div className="container serviceContent my-4">

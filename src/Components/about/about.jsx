@@ -5,6 +5,7 @@ import { faEye } from "@fortawesome/free-regular-svg-icons";
 import React from "react";
 import "./about.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useEffect } from "react";
 
 
 
@@ -21,6 +22,11 @@ function About(props) {
     "devrekha-india",
     "alstom",
   ];
+
+  // Scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   return (
     <React.Fragment>

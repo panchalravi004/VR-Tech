@@ -11,6 +11,7 @@ import emailjs from "@emailjs/browser";
 import { useRef } from 'react';
 import { Alert,Spinner } from 'react-bootstrap';
 import { useState } from 'react';
+import { useEffect } from 'react';
 
 
 function Contact(props) {
@@ -18,26 +19,31 @@ function Contact(props) {
   const [showSpinner, setshowSpinner] = useState(false);
   const form = useRef();
 
+  // Scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
     setshowSpinner(true);
   
     emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
-          console.log(result.text);
-          setshowSpinner(false);
+    .then((result) => {
+        console.log(result.text);
+        setshowSpinner(false);
 
-          document.getElementById("contact-form").reset();
-          
-          setshowSuccessAlert(true);
-          
-          setTimeout(() => {
-            setshowSuccessAlert(false);
-          }, 5000);
-      }, (error) => {
-          console.log(error.text);
-      });
+        document.getElementById("contact-form").reset();
+        
+        setshowSuccessAlert(true);
+        
+        setTimeout(() => {
+          setshowSuccessAlert(false);
+        }, 5000);
+    }, (error) => {
+        console.log(error.text);
+    });
   };
   return (
     <>
@@ -147,6 +153,7 @@ function Contact(props) {
                               </div>
                             </div>
                           </div>
+                          
                         </div>
                       </div>
                     

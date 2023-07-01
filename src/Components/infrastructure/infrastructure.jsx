@@ -2,8 +2,15 @@ import React from "react";
 import "./infrastructure.css";
 import MachineCard from "./machine-card";
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useEffect } from "react";
 
 function Infrastructure(props) {
+
+  // Scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <React.Fragment>
       <figure>

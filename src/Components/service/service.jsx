@@ -1,8 +1,15 @@
 import React from "react";
 import "./service.css";
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useEffect } from "react";
 
 function Service(props) {
+  
+  // Scroll to top
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <React.Fragment>
       <figure>
@@ -24,16 +31,29 @@ function Service(props) {
             </div>
           </div>
 
-          <div className="container-fluid p-0 mb-5">
-            <p className="page-header-detail">
-                Water jet cutting is a versatile and precise cutting process used in various industries to cut and shape different types of materials. 
-                It involves the use of a high-pressure stream of water, often mixed with abrasive particles, 
-                to cut through materials with precision and accuracy.
-            </p>
-            <p className="page-header-detail">
-              The water jet cutting system typically consists of a high-pressure pump that pressurizes water to extremely high levels, usually ranging from 30,000 to 90,000 pounds per square inch (psi). 
-              The pressurized water is then directed through a specialized cutting nozzle that focuses the stream into a concentrated jet.
-            </p>
+          <div className="container p-2 my-5">
+            <div class="row align-items-center">
+              <div className="col-lg-5 page-detail-image">
+                <figure>
+                  <img
+                    src={require("../../assets/slideshow/slide11.jpg")}
+                    alt="What is waterjet cutting ?"
+                  />
+                </figure>
+              </div>
+              <div className="col-lg-7">
+                <p className="page-header-detail">
+                    Water jet cutting is a versatile and precise cutting process used in various industries to cut and shape different types of materials. 
+                    It involves the use of a high-pressure stream of water, often mixed with abrasive particles, 
+                    to cut through materials with precision and accuracy.
+                </p>
+                <p className="page-header-detail">
+                  The water jet cutting system typically consists of a high-pressure pump that pressurizes water to extremely high levels, usually ranging from 30,000 to 90,000 pounds per square inch (psi). 
+                  The pressurized water is then directed through a specialized cutting nozzle that focuses the stream into a concentrated jet.
+                </p>
+              </div>
+            </div>
+            
             <p className="page-header-detail">
               In pure water jet cutting, the high-pressure water stream is used to cut softer materials like foam, rubber, plastics, and even food products. 
               However, for harder and tougher materials such as metals, stone, glass, or ceramics, abrasive particles such as garnet or aluminum oxide are mixed with the water to enhance the cutting power. 
@@ -52,40 +72,68 @@ function Service(props) {
               </h2>
             </div>
           </div>
-          <div className="container-fluid p-0 mb-5">
-            <p className="page-header-detail">
-              An important benefit of the water jet is the ability to cut material without interfering with its inherent
-              structure, as there is no heat-affected zone (HAZ). Minimizing the effects of heat allows metals to be
-              cut without harming or changing intrinsic properties. Sharp corners, bevels, pierce holes, and shapes
-              with minimal inner radii are all possible.<br/><br/>
+          <div className="container p-2 my-5">
+            <div class="row align-items-center">
+              <div className="col-lg-7">
+                <p className="page-header-detail">
+                  An important benefit of the water jet is the ability to cut material without interfering with its inherent
+                  structure, as there is no heat-affected zone (HAZ). Minimizing the effects of heat allows metals to be
+                  cut without harming or changing intrinsic properties. Sharp corners, bevels, pierce holes, and shapes
+                  with minimal inner radii are all possible.<br/><br/>
 
-              Water jet cutters are also capable of producing intricate cuts in material. With specialized software and
-              3-D machining heads, complex shapes can be produced.<br/><br/>
+                  Water jet cutters are also capable of producing intricate cuts in material. With specialized software and
+                  3-D machining heads, complex shapes can be produced.<br/><br/>
 
-              The kerf, or width, of the cut can be adjusted by swapping parts in the nozzle, as well as changing the
-              type and size of abrasive. Typical abrasive cuts have a kerf in the range of 0.04 to 0.05 in (1.0–1.3 mm),
-              but can be as narrow as 0.02 inches (0.51 mm). Non-abrasive cuts are normally 0.007 to 0.013 in (0.18–
-              0.33 mm), but can be as small as 0.003 inches (0.076 mm), which is approximately that of a human
-              hair. These small jets can permit small details in a wide range of applications.<br/><br/>
+                </p>
+              </div>
+              <div className="col-lg-5 page-detail-image">
+                <figure>
+                  <img
+                    src={require("../../assets/work/work-7.jpg")}
+                    alt="benifit of operations"
+                  />
+                </figure>
+              </div>
+              <p className="page-header-detail p-2">
+                  The kerf, or width, of the cut can be adjusted by swapping parts in the nozzle, as well as changing the
+                  type and size of abrasive. Typical abrasive cuts have a kerf in the range of 0.04 to 0.05 in (1.0–1.3 mm),
+                  but can be as narrow as 0.02 inches (0.51 mm). Non-abrasive cuts are normally 0.007 to 0.013 in (0.18–
+                  0.33 mm), but can be as small as 0.003 inches (0.076 mm), which is approximately that of a human
+                  hair. These small jets can permit small details in a wide range of applications.<br/><br/>
+              </p>
+            </div>
+            <div class="row align-items-center">
+              <div class="col-lg-5 page-detail-image">
+                <figure>
+                  <img
+                    src={require("../../assets/work/work-5.jpg")}
+                    alt="benifit of operations "
+                  />
+                </figure>
+              </div>
+              <div class="col-lg-7">
+                <p className="page-header-detail">
+                
+                  Water jets are capable of attaining accuracy down to 0.005 inches (0.13 mm) and repeatability down to
+                  0.001 inches (0.025 mm).<br/><br/>
 
-            </p>
-            <p className="page-header-detail">
-            
-              Water jets are capable of attaining accuracy down to 0.005 inches (0.13 mm) and repeatability down to
-              0.001 inches (0.025 mm).<br/><br/>
+                  Due to its relatively narrow kerf, water jet cutting can reduce the amount of scrap material produced,
+                  by allowing uncut parts to be nested more closely together than traditional cutting methods. Water
+                  jets use approximately 0.5 to 1 US gal (1.9–3.8 l) per minute (depending on the cutting head's orifice
+                  size), and the water can be recycled using a closed-loop system. Waste water usually is clean enough to
+                  filter and dispose of down a drain. <br/><br/>
+                </p>
+              </div>
+                <p className="page-header-detail p-2">
+                  The garnet abrasive is a non-toxic material that can be mostly
+                  recycled for repeated use; otherwise, it can usually be disposed in a landfill. Water jets also produce
+                  fewer airborne dust particles, smoke, fumes, and contaminants, reducing operator exposure to
+                  hazardous materials. <br/><br/>
 
-              Due to its relatively narrow kerf, water jet cutting can reduce the amount of scrap material produced,
-              by allowing uncut parts to be nested more closely together than traditional cutting methods. Water
-              jets use approximately 0.5 to 1 US gal (1.9–3.8 l) per minute (depending on the cutting head's orifice
-              size), and the water can be recycled using a closed-loop system. Waste water usually is clean enough to
-              filter and dispose of down a drain. The garnet abrasive is a non-toxic material that can be mostly
-              recycled for repeated use; otherwise, it can usually be disposed in a landfill. Water jets also produce
-              fewer airborne dust particles, smoke, fumes, and contaminants, reducing operator exposure to
-              hazardous materials.<br/><br/>
-
-              Metal cutting using waterjet technology eliminates the risk of cross contamination since the contact
-              medium is discarded. 
-            </p>
+                  Metal cutting using waterjet technology eliminates the risk of cross contamination since the contact
+                  medium is discarded. 
+                </p>
+            </div>
           </div>
         </div>
 
@@ -102,8 +150,16 @@ function Service(props) {
             </div>
             <ScrollAnimation animateIn="fadeIn">
               <div className="row align-items-center my-5">
-                <div
-                  className="col-lg-6"
+                
+                <div className="col-lg-5 order-lg-2 page-detail-image">
+                  <figure>
+                    <img
+                      src={require("../../assets/abrasive-waterjet-cutting.jpg")}
+                      alt="abrasive-waterjet-cutting"
+                    />
+                  </figure>
+                </div>
+                <div className="col-lg-6 order-lg-1"
                   style={{ textAlign: "justify", marginRight: "10px" }}
                 >
                   <p>
@@ -119,14 +175,6 @@ function Service(props) {
                     of great thicknesses and of the most diverse consistencies, such
                     as metals, ceramics, rock and even bullet-proof glass.
                   </p>
-                </div>
-                <div className="col-lg-5 page-detail-image">
-                  <figure>
-                    <img
-                      src={require("../../assets/abrasive-waterjet-cutting.jpg")}
-                      alt="abrasive-waterjet-cutting"
-                    />
-                  </figure>
                 </div>
               </div>
             </ScrollAnimation>
@@ -169,8 +217,15 @@ function Service(props) {
             <br />
             <ScrollAnimation animateIn="fadeIn">
               <div className="row align-items-center my-4">
-                <div
-                  className="col-lg-6 "
+              <div className="col-lg-5 order-lg-2 page-detail-image">
+                  <figure>
+                    <img
+                      src={require("../../assets/slideshow/slide15.jpg")}
+                      alt="pure-waterjet-cutting"
+                    />
+                  </figure>
+                </div>
+                <div className="col-lg-6 order-lg-1"
                   style={{ textAlign: "justify", marginRight: "10px" }}
                 >
                   <p >
@@ -184,14 +239,7 @@ function Service(props) {
                     properties of the material).
                   </p>
                 </div>
-                <div className="col-lg-5 page-detail-image">
-                  <figure>
-                    <img
-                      src={require("../../assets/work/work-11.jpg")}
-                      alt="pure-waterjet-cutting"
-                    />
-                  </figure>
-                </div>
+                
               </div>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeIn">
@@ -199,7 +247,7 @@ function Service(props) {
                 <div className="col-lg-5 page-detail-image">
                   <figure>
                     <img
-                      src={require("../../assets/work/work-6.jpg")}
+                      src={require("../../assets/slideshow/slide16.jpg")}
                       alt="pure-waterjet-cutting"
                     />
                   </figure>

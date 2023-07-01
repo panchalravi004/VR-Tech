@@ -5,6 +5,7 @@ figure img {
 
 .infrastructure-content-title{
   /* display: inline-block; */
+  text-align: center;
   background: linear-gradient(45deg,#EE5B40,#ee406b);
   color: white;
   padding: 2px 20px;

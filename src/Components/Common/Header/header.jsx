@@ -12,7 +12,12 @@ function Header(props) {
           <div className="lower-header-content">
             <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
               <NavLink className="navbar-brand" to="/">
-                VR TECHNOCRAFT
+                    <img
+                    className="vr-logo"
+                      src={require("../../../assets/logo.png")}
+                      alt="VR TECHNOCRAFT"
+                    />
+                  VR TECHNOCRAFT
               </NavLink>
               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavbar}>
                 <span class="navbar-toggler-icon"></span>
@@ -25,8 +30,8 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink className="nav-link" to="/infrastructure">
-                      INFRASTRUCTURE
+                    <NavLink className="nav-link" to="/about">
+                      ABOUT
                     </NavLink>
                   </li>
                   <li className="nav-item">
@@ -35,15 +40,16 @@ function Header(props) {
                     </NavLink>
                   </li>
                   <li className="nav-item">
+                    <NavLink className="nav-link" to="/infrastructure">
+                      INFRASTRUCTURE
+                    </NavLink>
+                  </li>
+                  <li className="nav-item">
                     <NavLink className="nav-link" to="/contact">
                       CONTACT
                     </NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/about">
-                      ABOUT
-                    </NavLink>
-                  </li>
+                  
                   {/* <li className="nav-item">
                     <a className="nav-link" href="#">
                       WE CATER
