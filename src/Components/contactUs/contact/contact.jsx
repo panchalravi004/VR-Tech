@@ -23,7 +23,7 @@ function Contact(props) {
 
     setshowSpinner(true);
   
-    emailjs.sendForm('service_iji952j', 'template_9illals', form.current, '6tcj98kAdXA88WEpm')
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
       .then((result) => {
           console.log(result.text);
           setshowSpinner(false);
