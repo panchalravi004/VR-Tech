@@ -21,7 +21,10 @@ function Contact(props) {
 
   // Scroll to top
   useEffect(() => {
-    window.scrollTo(0, 0)
+    if (form.current) {
+      form.current.scrollIntoView({ behavior: 'smooth' });
+      window.scrollTo(0, 0)
+    }
   }, []);
 
   const sendEmail = (e) => {
