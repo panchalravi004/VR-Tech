@@ -44,8 +44,8 @@ figure img {
 }
 
 .page-detail-image figure img{
-    border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(187, 187, 187, 0.541);
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(187, 187, 187, 0.341);
 }
 
 .gallery {
@@ -61,7 +61,7 @@ figure img {
   .gallery__column {
     display: flex;
     flex-direction: column;
-    width: 250px;
+    /* width: 250px; */
   }
   .gallery__link {
     margin: 2px;
@@ -82,7 +82,7 @@ figure img {
     transition: 0.3s;
   }
   .gallery__image:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
   }
   .gallery__caption {
     position: absolute;

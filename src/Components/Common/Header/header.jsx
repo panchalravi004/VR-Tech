@@ -1,23 +1,39 @@
 // import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 
 function Header(props) {
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setIsScrolled(scrollTop > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <React.Fragment>
       <div className="lower-header">
         <div className="container">
           <div className="lower-header-content">
-            <nav className="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <nav className={`navbar navbar-expand-lg  fixed-top ${isScrolled ? 'navbar-light bg-light not-scrolled' : 'navbar-dark bg-dark scrolled'} `}>
               <NavLink className="navbar-brand" to="/">
                     <img
                     className="vr-logo"
-                      src={require("../../../assets/logo.png")}
+                      src={require("../../../assets/logo.jpg")}
                       alt="VR TECHNOCRAFT"
                     />
-                   TECHNOCRAFT
+                   <span>TECHNOCRAFT</span>
               </NavLink>
               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavbar}>
                 <span class="navbar-toggler-icon"></span>

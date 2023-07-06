@@ -79,7 +79,7 @@ function Contact(props) {
 
       <div className="container">
           <div className="contact__wrapper" >
-              <div className="container-fluied row no-gutters">
+              <div className="container-fluied row no-gutters px-3 py-1">
                   <div className="col-lg-5 contact-info__wrapper gradient-brand-color order-lg-2">
                       <div className="row p-3">
                         <div className="companyName col-12 pt-3">

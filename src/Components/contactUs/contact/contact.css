@@ -81,7 +81,7 @@
 @media (min-width: 1024px) {
     .contact-info__wrapper {
         border-radius: 0 .625rem .625rem 0;
-        padding: 3rem !important
+        padding: 3rem !important;
     }
 }
 .contact-info__list span.position-absolute {
