@@ -17,7 +17,7 @@ function Header(props) {
                       src={require("../../../assets/logo.png")}
                       alt="VR TECHNOCRAFT"
                     />
-                  VR TECHNOCRAFT
+                   TECHNOCRAFT
               </NavLink>
               <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" onClick={handleNavbar}>
                 <span class="navbar-toggler-icon"></span>

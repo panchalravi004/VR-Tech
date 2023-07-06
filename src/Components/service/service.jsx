@@ -148,6 +148,78 @@ function Service(props) {
             <div className="d-flex justify-content-center">
               <h2 className="page-sub-header">ABRASIVE WATERJET CUTTING</h2>
             </div>
+                        
+            <div className="gallery">
+              <div className="gallery__column">
+                  <a href="https://unsplash.com/@jeka_fe" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                      <figure className="gallery__thumb">
+                        <img src={require("../../assets/service_image/vr1.webp")} alt="Portrait by Jessica Felicio" className="gallery__image"/>
+                
+                      </figure>
+                  </a>
+              </div>
+              <div className="gallery__column">
+                <a href="https://unsplash.com/@oladimeg" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                  <figure className="gallery__thumb">
+                    <img src={require("../../assets/service_image/vr2.webp")} alt="Portrait by Oladimeji Odunsi" className="gallery__image"/>
+            
+                  </figure>
+                </a>
+              </div>
+              <div className="gallery__column">
+                <a href="https://unsplash.com/@a2eorigins" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                  <figure className="gallery__thumb">
+                    <img src={require("../../assets/service_image/vr3.webp")} alt="Portrait by Alex Perez" className="gallery__image"/>
+            
+                  </figure>
+                </a>
+              </div>
+
+              <div className="gallery__column">
+                <a href="https://unsplash.com/@noahbuscher" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                  <figure className="gallery__thumb">
+                    <img src={require("../../assets/service_image/vr4.webp")} alt="Portrait by Noah Buscher" className="gallery__image"/>
+            
+                  </figure>
+                </a>
+                </div>
+                <div className="gallery__column">
+                <a href="https://unsplash.com/@von_co" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                  <figure className="gallery__thumb">
+                    <img src={require("../../assets/service_image/vr5.webp")}alt="Portrait by Ivana Cajina" className="gallery__image"/>
+            
+                  </figure>
+                </a>
+                </div>
+
+                <div className="gallery__column">
+                <a href="https://unsplash.com/@samburriss" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                  <figure className="gallery__thumb">
+                    <img src={require("../../assets/service_image/vr6.webp")} alt="Portrait by Sam Burriss" className="gallery__image"/>
+            
+                  </figure>
+                </a>
+                </div>
+
+                <div className="gallery__column">
+                  <a href="https://unsplash.com/@jeka_fe" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                      <figure className="gallery__thumb">
+                        <img src={require("../../assets/service_image/vr7.png")} alt="Portrait by Jessica Felicio" className="gallery__image"/>
+                
+                      </figure>
+                  </a>
+              </div>
+              <div className="gallery__column">
+                  <a href="https://unsplash.com/@jeka_fe" target="_blank" className="gallery__link" rel="noopener noreferrer">
+                      <figure className="gallery__thumb">
+                        <img src={require("../../assets/service_image/vr8.png")} alt="Portrait by Jessica Felicio" className="gallery__image"/>
+                
+                      </figure>
+                  </a>
+              </div>
+                
+            </div>
+
             <ScrollAnimation animateIn="fadeIn">
               <div className="row align-items-center my-5">
                 
@@ -268,9 +340,14 @@ function Service(props) {
               </div>
             </ScrollAnimation>
           </div>
+
         </div>
 
       </div>
+
+     
+
+	
     </React.Fragment>
   );
 }
