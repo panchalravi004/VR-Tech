@@ -2,6 +2,24 @@ figure img {
   max-width: 100%;
   height: 300px;
 }
+.crane-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(128, 127, 127, 0.288);
+  transition: 0.2s;
+  opacity: 0.9;
+}
+.crane-container{
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.crane-image:hover{
+  transform: scale(1.06);
+  opacity: 1;
+}
 
 .infrastructure-content-title{
   /* display: inline-block; */
@@ -16,7 +34,7 @@ figure img {
 .infrastruture-machine-heading{
   display: inline-block;
   font-weight: 600;
-  background-color: #7d4fa3;
+  background-color: #363636;
   color: white;
   padding: 7px 35px;
   margin: 25px 0px;
@@ -28,6 +46,7 @@ figure img {
   font-size: 1.3rem;
   text-align: start;
   margin: 25px 0px;
+  font-family: sans-serif;
 }
 
 .infrastructure-machine {
@@ -43,8 +62,9 @@ figure img {
  
 .infrastructure-machine .machine-description ul li {
   font-size: 1.2rem;
+  font-family: sans-serif;
 }
 
-h3 {
+/* h3 {
   margin: 40px 0 0 0;
-}
+} */

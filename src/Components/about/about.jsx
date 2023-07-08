@@ -32,7 +32,7 @@ function About(props) {
     <React.Fragment>
       <figure>
         <img
-          src={require("../../assets/slideshow/slide7.jpg")}
+          src={require("../../assets/covers/about.jpg")}
           alt="infrastructure-header"></img>
          <div className="page-image-header-title">
           <h2 >About of VR Technocraft</h2>

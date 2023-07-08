@@ -14,8 +14,8 @@ function Service(props) {
     <React.Fragment>
       <figure>
         <img
-          src={require("../../assets/slideshow/slide6.jpg")}
-          alt="infrastructure-header"
+          src={require("../../assets/covers/service.jpg")}
+          alt="service-header"
         ></img>
         <div className="page-image-header-title">
           <h2 >Water Jet</h2>

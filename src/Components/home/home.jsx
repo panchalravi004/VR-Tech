@@ -171,7 +171,7 @@ function Home(props) {
               <ScrollAnimation animateIn="fadeIn">
                 <img
                   className="serviceContent-image"
-                  src={require("../../assets/slideshow/slide12.jpg")}
+                  src={require("../../assets/others/our-services.jpg")}
                   alt=""
                 />
               </ScrollAnimation>

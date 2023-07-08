@@ -82,8 +82,8 @@ function Contact(props) {
               <div className="container-fluied row no-gutters px-3 py-1">
                   <div className="col-lg-5 contact-info__wrapper gradient-brand-color order-lg-2">
                       <div className="row p-3">
-                        <div className="companyName col-12 pt-3">
-                          <h2 style={{fontFamily:"sans-serif",color:"white"}}>VR TECHNOCRAFT</h2>
+                        <div className="company-title col-12 pt-3">
+                          <h3><img src={require("../../../assets/logo.jpg")} alt="logo"className='contact-company-logo' ></img>TECHNOCRAFT</h3>
                         </div>
                         <div className="col-lg-12 col-sm-12 ">
                           <div className="address mt-5">

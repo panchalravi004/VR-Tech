@@ -14,7 +14,7 @@ function Infrastructure(props) {
   return (
     <React.Fragment>
       <figure>
-        <img src={require("../../assets/covers/infrastructure-header.jpg")}alt="infrastructure-header"></img>
+        <img src={require("../../assets/covers/infrastructure.jpg")}alt="infrastructure-header"></img>
       </figure>
       <div className="container">
         <div className="container d-flex justify-content-center">
@@ -50,17 +50,16 @@ function Infrastructure(props) {
           </li>
           <li>
             <p className="infrastructure-detail">
-              Material Handling Capacity :
+              Material Handling Capacity : <b>25 MT Overhead</b> Crane & <b>20 MT Outside</b> Crane
             </p>
-            <ul>
-              <li>
-                <p className="infrastructure-detail">
-                  25 MT Overhead Crane & 20 MT Outside Crane
-                </p>
-              </li>
-            </ul>
           </li>
         </ul>
+
+        <div class="row my-5 mx-2">
+          <div className="col-lg-12 crane-container">
+            <img src={require("../../assets/crane.jpg")}  alt="infrastructure-header" className="crane-image"></img>
+          </div>
+        </div>
 
         <hr />
 
