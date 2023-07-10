@@ -178,35 +178,35 @@ function Contact(props) {
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label className="required-field" for="firstName">First Name</label>
-                                      <input type="text" className="form-control" id="firstName" name="firstName" placeholder="Pavan"/>
+                                      <input type="text" className="form-control" id="firstName" name="firstName" placeholder=""/>
                                   </div>
                               </div>
           
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label for="lastName">Last Name</label>
-                                      <input type="text" className="form-control" id="lastName" name="lastName" placeholder="Savani"/>
+                                      <input type="text" className="form-control" id="lastName" name="lastName" placeholder=""/>
                                   </div>
                               </div>
           
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label className="required-field" for="email">Email</label>
-                                      <input type="text" className="form-control" id="email" name="email" placeholder="pavansavani@gmail.com"/>
+                                      <input type="text" className="form-control" id="email" name="email" placeholder=""/>
                                   </div>
                               </div>
           
                               <div className="col-sm-6 mb-3">
                                   <div className="form-group">
                                       <label for="phone">Phone Number</label>
-                                      <input type="tel" className="form-control" id="phone" name="phone" placeholder="+919334556754"/>
+                                      <input type="tel" className="form-control" id="phone" name="phone" placeholder=""/>
                                   </div>
                               </div>
           
                               <div className="col-sm-12 mb-3">
                                   <div className="form-group">
                                       <label className="required-field" for="message">How can we help?</label>
-                                      <textarea className="form-control" id="message" name="message" rows="4" placeholder="Hi there, I would like to....."></textarea>
+                                      <textarea className="form-control" id="message" name="message" rows="4" placeholder=""></textarea>
                                   </div>
                               </div>
           

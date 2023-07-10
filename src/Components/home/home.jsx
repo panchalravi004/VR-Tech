@@ -145,7 +145,7 @@ function Home(props) {
         <div className="text-center content">
           <ScrollAnimation animateIn="fadeIn">
           <div className="d-flex justify-content-center">
-            <div className="page-main-header my-2">
+            <div className="my-2">
               <h1 >VR TECHNOCRAFT</h1>
             </div>
           </div>

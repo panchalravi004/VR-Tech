@@ -43,8 +43,8 @@
 
 .page-main-header{
   /* display: inline-block; */
-  background: linear-gradient(45deg,#EE5B40,#ee406b);
-  color: white;
+  /* background: linear-gradient(45deg,#EE5B40,#ee406b); */
+  color: black;
   padding: 2px 20px;
   border-radius: 30px;
   transition: 0.4s;
@@ -81,11 +81,12 @@
 
 .carsousel-title{
   display: inline-block;
-  background: rgba(255, 51, 0, 0.623);
+  /* background: rgba(255, 51, 0, 0.623); */
   color: white;
   padding: 2px 20px;
   border-radius: 25px;
   transition: 0.4s;
+  text-shadow: 0px 0px 20px black;
 }
 
 .carsousel-title:hover{

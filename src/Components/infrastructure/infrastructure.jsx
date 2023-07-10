@@ -63,7 +63,7 @@ function Infrastructure(props) {
 
         <hr />
 
-        <h4 className="infrastruture-machine-heading">Outside Water Jet Cutting Facility (1 & 2)</h4>
+        <h4 className="infrastruture-machine-heading">VR Technocraft water jet cutting facility ( 1 & 2)</h4>
         <ScrollAnimation animateIn="fadeIn">
           <MachineCard></MachineCard>
         </ScrollAnimation>
