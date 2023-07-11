@@ -150,39 +150,7 @@ function Service(props) {
             </div>
             {/* Gallery Images */}
             <div className="gallery row">
-              <div className="gallery__column col-lg-3 col-6">
-                  <div className="gallery__link" rel="noopener noreferrer">
-                      <figure className="gallery__thumb">
-                        <img src={require("../../assets/service_image/vr1.webp")} alt="Portrait by Jessica Felicio" className="gallery__image"/>
-                
-                      </figure>
-                  </div>
-              </div>
-              <div className="gallery__column col-lg-3 col-6">
-                <div className="gallery__link" rel="noopener noreferrer">
-                  <figure className="gallery__thumb">
-                    <img src={require("../../assets/service_image/vr2.webp")} alt="Portrait by Oladimeji Odunsi" className="gallery__image"/>
-            
-                  </figure>
-                </div>
-              </div>
-              <div className="gallery__column col-lg-3 col-6">
-                <div className="gallery__link" rel="noopener noreferrer">
-                  <figure className="gallery__thumb">
-                    <img src={require("../../assets/service_image/vr3.webp")} alt="Portrait by Alex Perez" className="gallery__image"/>
-            
-                  </figure>
-                </div>
-              </div>
-
-              <div className="gallery__column col-lg-3 col-6">
-                <div className="gallery__link" rel="noopener noreferrer">
-                  <figure className="gallery__thumb">
-                    <img src={require("../../assets/service_image/vr4.webp")} alt="Portrait by Noah Buscher" className="gallery__image"/>
-            
-                  </figure>
-                </div>
-                </div>
+              
                 <div className="gallery__column col-lg-3 col-6">
                 <div className="gallery__link" rel="noopener noreferrer">
                   <figure className="gallery__thumb">
