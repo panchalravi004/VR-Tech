@@ -44,13 +44,13 @@ figure img {
 .our-client-title{
   display: inline-block;
   padding-bottom: 10px;
-  border-bottom: 4px solid #6c3cc5;
+  border-bottom: 2px solid #6c3cc5;
   font-weight: 600;
 }
 .technology-title{
   display: inline-block;
   padding-bottom: 10px;
-  border-bottom: 4px solid #6c3cc5;
+  border-bottom: 2px solid #6c3cc5;
   font-weight: 600;
 }
 .technology-image figure img{

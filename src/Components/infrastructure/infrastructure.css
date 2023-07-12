@@ -24,11 +24,12 @@ figure img {
 .infrastructure-content-title{
   /* display: inline-block; */
   text-align: center;
-  background: linear-gradient(45deg,#EE5B40,#ee406b);
-  color: white;
+  /* background: linear-gradient(45deg,#EE5B40,#ee406b); */
+  color: black;
   padding: 2px 20px;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   transition: 0.4s;
+  border-bottom: 2px solid #6c3cc5;
 }
 
 .infrastruture-machine-heading{
