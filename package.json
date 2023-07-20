@@ -1,5 +1,6 @@
 {
   "name": "vr-tech",
+  "homepage": "http://www.vrtechnocraft.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

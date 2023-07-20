@@ -68,7 +68,7 @@ function Service(props) {
           <div className="container d-flex justify-content-center">
             <div className="page-main-header my-2">
               <h2>
-                Benifits of Operations
+               Benefits of Operations
               </h2>
             </div>
           </div>
