@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes , Navigate} from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.js";
 // import "../node_modules/ ../node_modules/font-awesome/css/font-awesome.min.css";
@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/service" element={<Service />}></Route>
         <Route exact path="/contact" element={<Contact />}></Route>
         <Route exact path="/about" element={<About />}></Route>
-        <Route exact path="/*" element={<Home />}></Route>
+        <Route exact path="/*" element={<Navigate to="/"/>}></Route>
       </Routes>
       <Footer></Footer>
     </Router>
