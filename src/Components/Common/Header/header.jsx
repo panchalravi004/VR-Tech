@@ -40,27 +40,27 @@ function Header(props) {
               </button>
               <div className="navbar-collapse collapse justify-content-end" id="navbarColor01">
                 <ul className="navbar-nav mr-auto nav-ul-li">
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/">
+                  <li className="nav-item" onClick={hideNav}>
+                    <NavLink className="nav-link" to="/" >
                       HOME
                     </NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="/about">
+                  <li className="nav-item" onClick={hideNav}>
+                    <NavLink className="nav-link" to="/about" >
                       ABOUT
                     </NavLink>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={hideNav}>
                     <NavLink className="nav-link" to="/service">
                       SERVICE
                     </NavLink>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={hideNav}>
                     <NavLink className="nav-link" to="/infrastructure">
                       INFRASTRUCTURE
                     </NavLink>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item" onClick={hideNav}>
                     <NavLink className="nav-link" to="/contact">
                       CONTACT
                     </NavLink>
@@ -87,15 +87,19 @@ function Header(props) {
 }
 
 function handleNavbar() {
-  
   var a = document.getElementById('navbarColor01');
   if (a.classList.contains('show')) {
-    
     a.classList.remove('show');
   }else{
     a.classList.add('show');
   }
 
+}
+
+function hideNav()
+{
+  var a = document.getElementById('navbarColor01');
+  a.classList.remove('show');
 }
 
 export default Header;
