@@ -17,7 +17,7 @@ function MachineCard({data}) {
       <div className={data ? "col-lg-6 machine-image order-lg-1" : "col-lg-6 machine-image order-lg-2" }>
         <figure>
           <img
-            src={require("../../assets/GRID-PRO-60HP-WATERJET-PUMP-3.jpg")}
+            src={require("../../assets/others/GRID-PRO-60HP-WATERJET-PUMP-3.jpg")}
             alt="machine-1"
           />
         </figure>

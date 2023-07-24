@@ -36,7 +36,7 @@ function Service(props) {
               <div className="col-lg-5 page-detail-image">
                 <figure>
                   <img
-                    src={require("../../assets/slideshow/slide11.jpg")}
+                    src={require("../../assets/service_image/service1.jpg")}
                     alt="What is waterjet cutting ?"
                   />
                 </figure>
@@ -89,7 +89,7 @@ function Service(props) {
               <div className="col-lg-5 page-detail-image">
                 <figure>
                   <img
-                    src={require("../../assets/work/work-7.jpg")}
+                    src={require("../../assets/service_image/service2.jpg")}
                     alt="benifit of operations"
                   />
                 </figure>
@@ -106,7 +106,7 @@ function Service(props) {
               <div class="col-lg-5 page-detail-image">
                 <figure>
                   <img
-                    src={require("../../assets/work/work-5.jpg")}
+                    src={require("../../assets/service_image/service3.jpg")}
                     alt="benifit of operations "
                   />
                 </figure>
@@ -194,7 +194,7 @@ function Service(props) {
                 <div className="col-lg-5 order-lg-2 page-detail-image">
                   <figure>
                     <img
-                      src={require("../../assets/abrasive-waterjet-cutting.jpg")}
+                      src={require("../../assets/service_image/abrasive-waterjet-cutting.jpg")}
                       alt="abrasive-waterjet-cutting"
                     />
                   </figure>
@@ -223,7 +223,7 @@ function Service(props) {
                 <div className="col-lg-5 page-detail-image">
                   <figure>
                     <img
-                      src={require("../../assets/work/work-9.jpg")}
+                      src={require("../../assets/service_image/service4.jpg")}
                       alt="abrasive-waterjet-cutting"
                     />
                   </figure>
@@ -260,7 +260,7 @@ function Service(props) {
               <div className="col-lg-5 order-lg-2 page-detail-image">
                   <figure>
                     <img
-                      src={require("../../assets/slideshow/slide15.jpg")}
+                      src={require("../../assets/service_image/service5.jpg")}
                       alt="pure-waterjet-cutting"
                     />
                   </figure>
@@ -287,7 +287,7 @@ function Service(props) {
                 <div className="col-lg-5 page-detail-image">
                   <figure>
                     <img
-                      src={require("../../assets/slideshow/slide16.jpg")}
+                      src={require("../../assets/service_image/service6.jpg")}
                       alt="pure-waterjet-cutting"
                     />
                   </figure>

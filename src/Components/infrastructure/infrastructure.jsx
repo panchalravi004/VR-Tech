@@ -57,7 +57,7 @@ function Infrastructure(props) {
 
         <div class="row my-5 mx-2">
           <div className="col-lg-12 crane-container">
-            <img src={require("../../assets/crane.jpg")}  alt="infrastructure-header" className="crane-image"></img>
+            <img src={require("../../assets/others/crane.jpg")}  alt="infrastructure-header" className="crane-image"></img>
           </div>
         </div>
 
