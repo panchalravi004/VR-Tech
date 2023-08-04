@@ -32,7 +32,7 @@ function Contact(props) {
 
     setshowSpinner(true);
   
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm('service_dytqln4', 'template_2k14vw6', form.current, 'JL2yujEz_AzXXJPKL')
     .then((result) => {
         console.log(result.text);
         setshowSpinner(false);
